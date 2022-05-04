@@ -16,3 +16,10 @@
 -->
 # JUnit Jupiter Example
 
+The intention of this example project is to show how to setup
+[Apache Maven][maven] and [JUnit Jupiter][junit] together within a single project.
+
+
+
+[junit]: https://junit.org/junit5/
+[maven]: https://maven.apache.org
