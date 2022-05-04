@@ -29,6 +29,7 @@
   <groupId>com.soebes.so.example.junitjupiter</groupId>
   <artifactId>example-junitjupiter</artifactId>
   <version>1.0-SNAPSHOT</version>
+
   <name>JUnit Jupiter Example</name>
 
   <scm>
