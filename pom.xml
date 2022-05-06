@@ -37,7 +37,6 @@
     <developerConnection>scm:git:ssh://git@github.com/khmarbaise/example-junitjupiter.git
     </developerConnection>
     <url>https://github.com/khmarbaise/example-junitjupiter</url>
-    <tag>HEAD</tag>
   </scm>
 
   <properties>
