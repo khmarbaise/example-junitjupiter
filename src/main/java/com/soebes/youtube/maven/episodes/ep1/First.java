@@ -21,9 +21,6 @@ package com.soebes.youtube.maven.episodes.ep1;
 
 import java.util.Objects;
 
-/**
- * @author Karl Heinz Marbaise
- */
 public class First {
 
   private int sum;

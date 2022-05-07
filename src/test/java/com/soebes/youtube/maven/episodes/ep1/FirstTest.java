@@ -23,9 +23,6 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-/**
- * @author Karl Heinz Marbaise
- */
 class FirstTest {
 
   @Test
