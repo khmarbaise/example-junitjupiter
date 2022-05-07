@@ -1,4 +1,4 @@
-package com.soebes.example.junit.jupiter;
+package com.soebes.youtube.maven.episodes.ep1;
 
 /*
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -19,20 +19,35 @@ package com.soebes.example.junit.jupiter;
  * under the License.
  */
 
-import static org.assertj.core.api.Assertions.assertThat;
-
-import org.junit.jupiter.api.Test;
+import java.util.Objects;
 
 /**
  * @author Karl Heinz Marbaise
  */
-class FirstTest {
+public class First {
 
-  @Test
-  void first_add() {
-    First sum1 = new First(5);
-    First sum2 = new First(2);
+  private int sum;
 
-    assertThat(sum1.add(sum2)).isEqualTo(new First(7));
+  public First(int sum) {this.sum = sum;}
+
+  public First add(First first) {
+    return new First(first.sum + this.sum);
+  }
+
+  @Override
+  public boolean equals(Object o) {
+    if (this == o) {
+      return true;
+    }
+    if (o == null || getClass() != o.getClass()) {
+      return false;
+    }
+    First first = (First) o;
+    return sum == first.sum;
+  }
+
+  @Override
+  public int hashCode() {
+    return Objects.hash(sum);
   }
 }
