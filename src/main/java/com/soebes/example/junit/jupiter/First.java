@@ -28,7 +28,9 @@ public class First {
 
   private int sum;
 
-  public First(int sum) {this.sum = sum;}
+  public First(int sum) {
+    this.sum = sum;
+  }
 
   public First add(First first) {
     return new First(first.sum + this.sum);
