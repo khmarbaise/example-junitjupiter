@@ -32,13 +32,6 @@
 
   <name>JUnit Jupiter Example</name>
 
-  <scm>
-    <connection>scm:git:https://github.com/khmarbaise/example-junitjupiter.git</connection>
-    <developerConnection>scm:git:ssh://git@github.com/khmarbaise/example-junitjupiter.git
-    </developerConnection>
-    <url>https://github.com/khmarbaise/example-junitjupiter</url>
-  </scm>
-
   <properties>
     <maven.compiler.release>17</maven.compiler.release>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
