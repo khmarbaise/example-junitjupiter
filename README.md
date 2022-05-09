@@ -14,12 +14,13 @@
  See the License for the specific language governing permissions and
  limitations under the License.
 -->
+
 # Using JUnit Jupiter in an Apache Maven Project
 
-The intention of this example project is to show how to setup
+The intention of this project is to show how to set up
 [Apache Maven][maven] and [JUnit Jupiter][junit] together within a single project.
 
 
-
 [junit]: https://junit.org/junit5/
+
 [maven]: https://maven.apache.org
