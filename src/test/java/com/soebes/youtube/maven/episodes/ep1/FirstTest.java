@@ -20,8 +20,13 @@ package com.soebes.youtube.maven.episodes.ep1;
  */
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.junit.jupiter.params.provider.Arguments.of;
 
+import java.util.stream.Stream;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.Arguments;
+import org.junit.jupiter.params.provider.MethodSource;
 
 class FirstTest {
 
@@ -31,5 +36,17 @@ class FirstTest {
     First sum2 = new First(2);
 
     assertThat(sum1.add(sum2)).isEqualTo(new First(7));
+  }
+
+  static Stream<Arguments> parameterized() {
+    return Stream.of(
+        of(new First(1), new First(2), new First(3)),
+        of(new First(2), new First(3), new First(5))
+    );
+  }
+  @ParameterizedTest
+  @MethodSource
+  void parameterized(First sum1, First sum2, First result) {
+    assertThat(sum1.add(sum2)).isEqualTo(result);
   }
 }
